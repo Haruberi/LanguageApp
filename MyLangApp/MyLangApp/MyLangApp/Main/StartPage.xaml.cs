@@ -21,5 +21,18 @@ namespace MyLangApp.Main
         {
 
         }
+
+        private void chinese_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void korean_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        private void ToolbarItemJapanese_Clicked(object sender, EventArgs e)
+        {
+        }
+        }
     }
-}
