@@ -1,5 +1,4 @@
-﻿using MyLangApp.Services;
-using MyLangApp.Views;
+﻿using MyLangApp.Main;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,8 +12,8 @@ namespace MyLangApp
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new StartPage());
+
         }
 
         protected override void OnStart()

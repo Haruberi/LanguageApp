@@ -5,6 +5,10 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Japanese"
                      Clicked="ToolbarItemJapanese_Clicked"/>
+        <ToolbarItem Text="Chinese"
+                     Clicked="ToolbarItemChinese_Clicked"/>
+        <ToolbarItem Text="Korean"
+                     Clicked="ToolbarItemKorean_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout Margin="20, 20, 20, 0">
         <Label Text="Choose which language you would like to learn!"
