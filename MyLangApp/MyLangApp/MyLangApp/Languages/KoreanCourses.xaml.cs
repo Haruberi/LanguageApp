@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyLangApp.Main
+namespace MyLangApp.Languages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StartPage : ContentPage
+    public partial class KoreanCourses : ContentPage
     {
-        public StartPage()
+        public KoreanCourses()
         {
             InitializeComponent();
-        }
-
-        private void japanese_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }
