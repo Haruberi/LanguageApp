@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyLangApp.KoreanLevel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,21 @@ namespace MyLangApp.Languages
         public KoreanCourses()
         {
             InitializeComponent();
+        }
+        //Navigate to levels
+        private void korlevel1_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KorLevel1());
+        }
+
+        private void korlevel2_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KorLevel2());
+        }
+
+        private void korlevel3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KorLevel3());
         }
     }
 }

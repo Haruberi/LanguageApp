@@ -2,6 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.UserFolder.UserLoginPage"
-             BackgroundColor="Red">
+             BackgroundColor="IndianRed">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="WELCOME!"
+                   FontSize="35"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   Margin="100"/>
+            <Entry 
+                Placeholder="Username"
+                Text="{Binding Username}"/>
+            <Entry
+                Placeholder="Password"
+                Text="{Binding Password}" IsPassword="True"/>
+            <Button 
+                Text="Login" 
+                Command="{Binding LoginCommand}"
+                Margin="15"
+                Font="Bold"
+                FontSize="Large"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

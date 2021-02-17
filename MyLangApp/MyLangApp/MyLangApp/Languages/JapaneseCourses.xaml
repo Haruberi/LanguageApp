@@ -7,16 +7,20 @@
                FontSize="Medium"
                TextColor="Black"
                HorizontalOptions="Center"/>
+        
         <Button Text="LEVEL 1"
                 BackgroundColor="Crimson"
                 x:Name="japlevel1"
                 Margin="15"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="japlevel1_Clicked"/>
+        
         <Button Text="LEVEL 2"
                 BackgroundColor="Crimson"
                 x:Name="japlevel2"
                 Margin="15"
                 HorizontalOptions="Center"/>
+        
             <Button Text="LEVEL 3"
                 BackgroundColor="Crimson"
                 x:Name="japlevel3"

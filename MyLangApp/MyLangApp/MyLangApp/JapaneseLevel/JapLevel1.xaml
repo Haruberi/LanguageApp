@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.JapaneseLevel.JapLevel1">
-    <StackLayout Margin="20, 20, 20, 0">
-        <Label Text="JAPANESE LEVEL 1"
+    <ContentPage.Content>
+        <StackLayout Margin="20, 20, 20, 0">
+            <Label Text="LEARNING JAPANESE LEVEL 1"
                FontSize="Large"
                TextColor="Crimson"
                HorizontalOptions="Center"/>
-    </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyLangApp.JapaneseLevel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,11 @@ namespace MyLangApp.Languages
         public JapaneseCourses()
         {
             InitializeComponent();
+        }
+        //Navigte to levels
+        private void japlevel1_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new JapLevel1());
         }
     }
 }

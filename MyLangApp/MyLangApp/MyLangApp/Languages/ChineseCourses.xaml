@@ -7,12 +7,15 @@
                FontSize="Large"
                TextColor="Black"
                HorizontalOptions="Center"/>
+        
         <Button Text="LEVEL 1"
                 FontSize="Title"
                 BackgroundColor="Crimson"
                 x:Name="chilevel1"
                 Margin="15"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="chilevel1_Clicked"/>
+        
         <Button Text="LEVEL 2"
                 FontSize="Title"
                 BackgroundColor="Crimson"
