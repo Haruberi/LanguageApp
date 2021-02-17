@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyLangApp.Main.StartPage">
+             x:Class="MyLangApp.Main.StartPage"
+             >
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Japanese"
                      Clicked="ToolbarItemJapanese_Clicked"/>
@@ -11,23 +12,28 @@
                      Clicked="ToolbarItemKorean_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout Margin="20, 20, 20, 0">
-        <Label Text="Choose which language you would like to learn!"
-               FontSize="Medium"
+        <Entry Text="WELCOME!"
+               HorizontalOptions="Center"/>
+        <Label Text="Choose a language to learn!"
+               FontSize="Large"
                TextColor="Black"
                HorizontalOptions="Center"/>
         <Button Text="JAPANESE"
+                FontSize="Title"
                 BackgroundColor="Crimson"
                 x:Name="japanese"
                 Margin="15"
                 HorizontalOptions="Center"
                 Clicked="japanese_Clicked"/>
         <Button Text="CHINESE"
+                FontSize="Title"
                 BackgroundColor="Crimson"
                 x:Name="chinese"
                 Margin="15"
                 HorizontalOptions="Center"
                 Clicked="chinese_Clicked"/>
         <Button Text="KOREAN"
+                FontSize="Title"
                 BackgroundColor="Crimson"
                 x:Name="korean"
                 Margin="15"
