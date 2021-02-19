@@ -19,12 +19,14 @@
                 BackgroundColor="Crimson"
                 x:Name="japlevel2"
                 Margin="15"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="japlevel2_Clicked"/>
         
             <Button Text="LEVEL 3"
                 BackgroundColor="Crimson"
                 x:Name="japlevel3"
                 Margin="15"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                    Clicked="japlevel3_Clicked"/>
     </StackLayout>
 </ContentPage>

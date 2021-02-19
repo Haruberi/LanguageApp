@@ -1,4 +1,5 @@
 ﻿using MyLangApp.Main;
+using MyLangApp.UserFolder;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace MyLangApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new StartPage());
+            MainPage = new NavigationPage(new UserLoginPage());
 
         }
 

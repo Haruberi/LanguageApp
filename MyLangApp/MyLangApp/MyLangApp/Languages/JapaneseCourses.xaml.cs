@@ -22,5 +22,15 @@ namespace MyLangApp.Languages
         {
             Navigation.PushAsync(new JapLevel1());
         }
+
+        private void japlevel2_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new JapLevel2());
+        }
+
+        private void japlevel3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new JapLevel3());
+        }
     }
 }

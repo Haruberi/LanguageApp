@@ -2,15 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.UserFolder.UserLoginPage"
-             BackgroundColor="IndianRed">
+             BackgroundColor="RoyalBlue">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="WELCOME!"
                    FontSize="35"
                    HorizontalOptions="CenterAndExpand"
                    TextColor="White"
-                   Margin="100"/>
-            <Entry 
+                   Margin="100"
+                   />
+            <Entry
                 Placeholder="Username"
                 Text="{Binding Username}"/>
             <Entry
@@ -21,7 +22,8 @@
                 Command="{Binding LoginCommand}"
                 Margin="15"
                 Font="Bold"
-                FontSize="Large"/>
+                FontSize="Large"
+                Clicked="Button_Clicked"/>
             
         </StackLayout>
     </ContentPage.Content>

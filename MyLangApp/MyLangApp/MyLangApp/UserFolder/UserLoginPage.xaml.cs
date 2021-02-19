@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyLangApp.Main;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,11 @@ namespace MyLangApp.UserFolder
         public UserLoginPage()
         {
             InitializeComponent();
+        }
+        //Navigate to start page
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new StartPage());
         }
     }
 }

@@ -23,5 +23,15 @@ namespace MyLangApp.Languages
         {
             Navigation.PushAsync(new ChiLevel1());
         }
+
+        private void chilevel2_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ChiLevel2());
+        }
+
+        private void chilevel3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ChiLevel3());
+        }
     }
 }

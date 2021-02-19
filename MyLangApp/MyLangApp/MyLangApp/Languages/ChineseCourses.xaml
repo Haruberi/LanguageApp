@@ -15,18 +15,21 @@
                 Margin="15"
                 HorizontalOptions="Center"
                 Clicked="chilevel1_Clicked"/>
-        
+
         <Button Text="LEVEL 2"
                 FontSize="Title"
                 BackgroundColor="Crimson"
                 x:Name="chilevel2"
                 Margin="15"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="chilevel2_Clicked"/>
+        
         <Button Text="LEVEL 3"
                 FontSize="Title"
                 BackgroundColor="Crimson"
                 x:Name="chilevel3"
                 Margin="15"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="chilevel3_Clicked"/>
     </StackLayout>
 </ContentPage>
