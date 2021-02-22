@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.Languages.ChineseCourses">
     <StackLayout Margin="20, 20, 20, 0">
-        <Label Text="CHINESE COURSES"
-               FontSize="Large"
-               TextColor="Black"
+        <Label Text="CHINESE (中文) COURSES"
+               FontSize="Title"
+               TextColor="Crimson"
                HorizontalOptions="Center"/>
         
         <Button Text="LEVEL 1"
                 FontSize="Title"
-                BackgroundColor="Crimson"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="chilevel1"
                 Margin="15"
                 HorizontalOptions="Center"
@@ -18,7 +19,8 @@
 
         <Button Text="LEVEL 2"
                 FontSize="Title"
-                BackgroundColor="Crimson"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="chilevel2"
                 Margin="15"
                 HorizontalOptions="Center"
@@ -26,7 +28,8 @@
         
         <Button Text="LEVEL 3"
                 FontSize="Title"
-                BackgroundColor="Crimson"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="chilevel3"
                 Margin="15"
                 HorizontalOptions="Center"

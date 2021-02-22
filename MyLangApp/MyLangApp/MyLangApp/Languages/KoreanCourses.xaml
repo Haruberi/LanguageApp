@@ -3,28 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.Languages.KoreanCourses">
     <StackLayout Margin="20, 20, 20, 0">
-        
-        <Label Text="KOREAN COURSES"
-               FontSize="Medium"
-               TextColor="Black"
+
+        <Label Text="KOREAN (한국어) COURSES"
+               FontSize="Title"
+               TextColor="Crimson"
                HorizontalOptions="Center"/>
         
         <Button Text="LEVEL 1"
-                BackgroundColor="Crimson"
+                FontSize="Title"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="korlevel1"
                 Margin="15"
                 HorizontalOptions="Center"
                 Clicked="korlevel1_Clicked"/>
         
         <Button Text="LEVEL 2"
-                BackgroundColor="Crimson"
+                FontSize="Title"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="korlevel2"
                 Margin="15"
                 HorizontalOptions="Center"
                 Clicked="korlevel2_Clicked"/>
         
         <Button Text="LEVEL 3"
-                BackgroundColor="Crimson"
+                FontSize="Title"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="korlevel3"
                 Margin="15"
                 HorizontalOptions="Center"

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.Main.StartPage"
-             BackgroundColor="RoyalBlue"
+             BackgroundColor="Purple"
              >
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Japanese"
@@ -13,18 +13,20 @@
                      Clicked="ToolbarItemKorean_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout Margin="20, 20, 20, 0">
-        <Entry Text="WELCOME!"
+        <Entry Text="Hi!"
                HorizontalOptions="Center"
-               TextColor="Aquamarine"/>
+               TextColor="LightSalmon"
+               FontAttributes="Bold"
+               FontSize="Header"/>
         <Label Text="Choose a language to learn!"
-               FontSize="Large"
-               TextColor="AliceBlue"
+               FontSize="Title"
+               TextColor="Pink"
                HorizontalOptions="Center"/>
         
         <Button Text="JAPANESE"
                 FontSize="Title"
-                TextColor="DarkSlateBlue"
-                BackgroundColor="MediumPurple"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="japanese"
                 Margin="15"
                 HorizontalOptions="Center"
@@ -32,8 +34,8 @@
         
         <Button Text="CHINESE"
                 FontSize="Title"
-                TextColor="AliceBlue"
-                BackgroundColor="MediumPurple"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="chinese"
                 Margin="15"
                 HorizontalOptions="Center"
@@ -41,8 +43,8 @@
         
         <Button Text="KOREAN"
                 FontSize="Title"
-                TextColor="AliceBlue"
-                BackgroundColor="MediumPurple"
+                TextColor="White"
+                BackgroundColor="Salmon"
                 x:Name="korean"
                 Margin="15"
                 HorizontalOptions="Center"

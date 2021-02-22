@@ -8,6 +8,12 @@
                FontSize="Large"
                TextColor="Crimson"
                HorizontalOptions="Center"/>
+
+            <Button Text="START"
+                BackgroundColor="LightCoral"
+                x:Name="startButtonJapLevel2"
+                Margin="15"
+                HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
