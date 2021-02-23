@@ -12,9 +12,18 @@ namespace MyLangApp.UserFolder
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserRegisterPage : ContentPage
     {
+        private object entryUsername;
+
         public UserRegisterPage()
         {
             InitializeComponent();
+        }
+
+        private void btnRegister_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.Properties["Username"] = entryUsername.Text;
+            Application.Current.Properties["Password"] = entryPassword.Text;
+            Navigation.PopAsync();
         }
     }
 }
