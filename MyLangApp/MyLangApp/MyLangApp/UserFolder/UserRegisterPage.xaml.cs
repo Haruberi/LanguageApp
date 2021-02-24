@@ -21,7 +21,7 @@ namespace MyLangApp.UserFolder
 
         private void btnRegister_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PushAsync(new LoginPage());
         }
     }
 }
