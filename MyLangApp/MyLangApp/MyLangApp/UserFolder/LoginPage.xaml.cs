@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -16,17 +15,6 @@ namespace MyLangApp.UserFolder
         public LoginPage()
         {
             InitializeComponent();
-
-            if (Application.Current.Properties.ContainsKey("Username") && Application.Current.Properties.ContainsKey("Password"))
-            {
-                var username = Application.Current.Properties["Username"] as string;
-                var password = Application.Current.Properties["Password"] as string;
-
-            if(entryUsername.Text == username && entryPassword.Text == password)
-                {
-
-                }
-            }
         }
 
         //Navigate to First page to choose whether login/register (UserLoginPage)

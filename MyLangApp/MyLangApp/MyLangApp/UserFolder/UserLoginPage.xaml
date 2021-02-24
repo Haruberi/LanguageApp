@@ -3,98 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyLangApp.UserFolder.UserLoginPage"
              BackgroundColor="#C382D6">
-    <AbsoluteLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0.1,0,400,100" AbsoluteLayout.LayoutFlags="XProportional">
-            <Label Text="WELCOME" TextColor="White" FontSize="Title" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,10,0,0"></Label>
-        </StackLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5,370,400,130" AbsoluteLayout.LayoutFlags="XProportional" Margin="0,20,0,0">
-            <Button Text="SIGN UP" x:Name="signup" Clicked="signup_Clicked" TextColor="White" BackgroundColor="Salmon" HeightRequest="40" WidthRequest="300" HorizontalOptions="Center"></Button>
-            <Button Text="SIGN IN" x:Name="signin" Clicked="signin_Clicked" TextColor="White" BackgroundColor="Purple" HeightRequest="40" WidthRequest="300" HorizontalOptions="Center"></Button>
-        </StackLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5,100,350,300" AbsoluteLayout.LayoutFlags="XProportional">
-            <ContentView x:Name="overlay"
-                         AbsoluteLayout.LayoutBounds="0.5,0,1,1"
-                         AbsoluteLayout.LayoutFlags="All"
-                         IsVisible="False"
-                         BackgroundColor="#C382D6"
-                         Padding="10,0">
-                <StackLayout WidthRequest="400" Orientation="Vertical"
-                             BackgroundColor="White"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             Padding="10">
-                    <Label FontSize="18"
-                           TextColor="Salmon"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Text="SIGN UP PAGE"/>
-                    <Entry
-                        Placeholder="Username" x:Name="username1"
-                        TextColor="Black"
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="FillAndExpand"/>
-                    
-                    <Entry
-                        Placeholder="Email" x:Name="Email1"
-                        TextColor="Black"
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="FillAndExpand"/>
-                    
-                    <Entry
-                        Placeholder="Password" IsPassword="True"
-                        TextColor="Black" x:Name="Password1"
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="FillAndExpand"/>
+    <ContentPage.Content>
+        <StackLayout Margin="25, 20, 20, 0">
+            <Entry Text="Welcome"
+               HorizontalOptions="Center"
+               TextColor="White"
+               FontAttributes="Bold"
+               FontSize="37"/>
+            <Label Text="About this app... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                   TextColor="White"
+                   Margin="20"/>
 
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                        <Button Text="Cancel" FontSize="Large"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="Center"
-                                BorderRadius="10"
-                                x:Name="cancel" Clicked="cancel_Clicked"/>
-                        <Button Text="Sign up" FontSize="Large"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalOptions="Center"
-                                BorderRadius="10"
-                                x:Name="clicksignup" Clicked="signup_Clicked"/>
-                    </StackLayout>
-                </StackLayout>
-            </ContentView>
-            <ContentView x:Name="overlay1"
-                         AbsoluteLayout.LayoutBounds="0.5,0,1,1"
-                         AbsoluteLayout.LayoutFlags="All"
-                         IsVisible="False"
-                         BackgroundColor="#C382D6"
-                         Padding="10,0">
-                <StackLayout Orientation="Vertical" WidthRequest="400"
-                             BackgroundColor="White"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"
-                             Padding="10">
-                    <Label FontSize="18"
-                           TextColor="White"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Text="LOGIN PAGE"/>
-                    <Entry
-                        Placeholder="Email" x:Name="logemail"
-                        TextColor="Black"
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="FillAndExpand"/>
-                    <Entry Placeholder="Password"
-                           IsPassword="False"
-                           x:Name="logpassword"
-                           TextColor="Black"
-                           VerticalOptions="CenterAndExpand"
-                           HorizontalOptions="FillAndExpand"/>
-                    <StackLayout Orienttion="Horizontal" HorizontalOptions="Center">
-                        <Button Text="Cancel"
-                                FontSize="Large"/>
-                    </StackLayout>
-                </StackLayout>
-                
-            </ContentView>
+            <Button x:Name="btnLogin"
+                    TextColor="White"
+                    FontSize="Large"
+                    BackgroundColor="Salmon"
+                    Text="LOGIN"
+                    Clicked="btnLogin_Clicked">
+            </Button>
+            
+            <Button x:Name="btnRegister"
+                    TextColor="White"
+                    FontSize="Large"
+                    BackgroundColor="Salmon"
+                    Text="REGISTER"
+                    Clicked="btnRegister_Clicked"></Button>
         </StackLayout>
-    </AbsoluteLayout>
-
+    </ContentPage.Content>
 </ContentPage>

@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyLangApp.UserFolder.UserRegisterPage">
+             x:Class="MyLangApp.UserFolder.UserRegisterPage"
+             BackgroundColor="#C382D6">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="25"
+                     VerticalOptions="Center">
+            <Label Text="REGISTER PAGE"
+                   TextColor="White"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,50"/>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Username" FontSize="Default" FontAttributes="Bold"/>
+                <Entry x:Name="enterUsername" Placeholder="Type here..."></Entry>
+                <Label Text="Password" FontSize="Default" FontAttributes="Bold"/>
+                <Entry x:Name="enterPassword" Placeholder="Type here..."></Entry>
+                <Label Text="Email" FontSize="Default" FontAttributes="Bold"/>
+                <Entry x:Name="enterEmail" Placeholder="Type here..."></Entry>
+
+                <Button x:Name="btnRegister"
+                        FontSize="Title"
+                        Text="REGISTER"
+                        TextColor="White"
+                        BackgroundColor="Salmon"
+                        Margin="15"
+                        HorizontalOptions="Center"
+                        Clicked="btnRegister_Clicked"/>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

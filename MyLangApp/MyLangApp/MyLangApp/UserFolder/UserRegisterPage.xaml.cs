@@ -21,8 +21,6 @@ namespace MyLangApp.UserFolder
 
         private void btnRegister_Clicked(object sender, EventArgs e)
         {
-            Application.Current.Properties["Username"] = entryUsername.Text;
-            Application.Current.Properties["Password"] = entryPassword.Text;
             Navigation.PopAsync();
         }
     }

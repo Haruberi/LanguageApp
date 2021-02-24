@@ -1,12 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyLangApp.UserFolder.LoginPage">
+             x:Class="MyLangApp.UserFolder.LoginPage"
+             BackgroundColor="#C382D6">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="25"
+                     VerticalOptions="Center">
+            <Label Text="LOGIN PAGE" 
+                   TextColor="White" 
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,50"/>
+
+            <Label Text="Username" 
+                   FontSize="Default"
+                   FontAttributes="Bold"/>
+            <Entry x:Name="entryUsername"
+                   Placeholder="Type here..."></Entry>
+
+            <Label Text="Password"
+                   FontSize="Default"
+                   FontAttributes="Bold"/>
+            <Entry x:Name="entryPassword"
+                   Placeholder="Type here..."
+                   IsPassword="True"></Entry>
+
+            <Button x:Name="btnLogin"
+                    FontSize="Title"
+                    Text="LOGIN"
+                    TextColor="White"
+                    BackgroundColor="Salmon"
+                    Margin="20"
+                    HorizontalOptions="Center"
+                    Clicked="btnLogin_Clicked"
+                    ></Button>
+            
+            <!--btnCancel gör att man går tillbaka till UserLoginPage-->
+            <Button x:Name="btnCancel"
+                    FontSize="Large"
+                    Text="CANCEL"
+                    TextColor="White"
+                    BackgroundColor="Salmon"
+                    Clicked="btnCancel_Clicked"
+                    ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

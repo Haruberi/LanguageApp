@@ -1,10 +1,13 @@
-﻿using System;
+﻿using SQLite;
+using SQLite.Net;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyLangApp
+namespace MyLangApp.Interfaces
 {
-    interface ISQLiteInterface
+    public interface ISQLiteInterface
     {
+        SQLite.SQLiteConnection GetLiteConnection();
     }
 }

@@ -16,6 +16,8 @@ namespace MyLangApp
             MainPage = new NavigationPage(new UserLoginPage());
 
         }
+        //Lägg till Application.Current.Properties här
+        //Kan lagra data här
 
         protected override void OnStart()
         {

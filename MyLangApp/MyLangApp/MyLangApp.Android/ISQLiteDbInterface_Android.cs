@@ -4,14 +4,31 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MyLangApp.Droid.Dependancies;
+using MyLangApp.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SQLite.Net;
+using Xamarin.Forms;
+using System.IO;
 
-namespace MyLangApp.Droid
+[assembly: Dependency(typeof(GetSQLiteConnection))]
+namespace MyLangApp.Droid.Dependancies
 {
-    interface ISQLiteDbInterface_Android
+    public class GetSQLiteConnection : ISQLiteInterface
     {
+        //public GetSQLiteConnection()
+        //{
+
+        public SQLite.SQLiteConnection GetLiteConnection()
+        {
+            throw new NotImplementedException();
+        }
+
+        interface ISQLiteDbInterface_Android
+        {
+        }
     }
 }
