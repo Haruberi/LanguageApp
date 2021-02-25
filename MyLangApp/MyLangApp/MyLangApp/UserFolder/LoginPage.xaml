@@ -37,7 +37,6 @@
                     HorizontalOptions="Center"
                     Clicked="btnLogin_Clicked"
                     ></Button>
-            <Label x:Name="forgetLabel" Text="Forgot your password?" TextColor="Blue" FontSize="15" BackgroundColor="Transparent"/>
 
             <!--btnCancel gör att man går tillbaka till UserLoginPage-->
             <Button x:Name="btnCancel"
