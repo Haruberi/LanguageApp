@@ -35,10 +35,12 @@ namespace MyLangApp.UserFolder
             {
                 IEnumerable<User> result = userData.whereUser(entryUsername.Text.Trim(), entryPassword.Text.Trim());
 
+                //Skriver inn fel
                 if (result.Count() ==0)
                 {
-                    await DisplayAlert("Alert", "Incorrect Password", "OK");
+                    await DisplayAlert("Alert", "Incorrect Username or Password", "OK");
                 }
+                //Skriver in rätt?
                 else if (result.Count() ==1)
                 {
                     await (Navigation.PushAsync(new StartPage()));
@@ -59,15 +61,19 @@ namespace MyLangApp.UserFolder
         {
             if (String.IsNullOrWhiteSpace(entryUsername.Text))
             {
-                await this.DisplayAlert("WARNING", "You need to enter an email", "OK");
+                await this.DisplayAlert("WARNING", "You need to enter a valid username", "OK");
                 return false;
             }
             else
             {
-                bool isEmail = Regex.IsMatch(entryUsername.Text, @"\ A (?:[a-z0-9! # $% & '* + /=? ^_`{|} ~ -] + (?: \. [a-z0-9] (?: [a-z0-9 -] * [a-z0-9]?) \ Z ", RegexOptions.IgnoreCase);
-                if (! isEmail)
+                //Här kraschar programmet
+                //bool isEmail = Regex.IsMatch(entryUsername.Text, @"\ A (?:[a-z0-9! # $% & '* + /=? ^_`{|} ~ -] + (?: \. [a-z0-9] (?: [a-z0-9 -] * [a-z0-9]?) \ Z ", RegexOptions.IgnoreCase);
+                //bool isEmail = Regex.IsMatch(entryUsername.Text, @"\A(?:[a-z0 - 9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+                //if (! isEmail)
+                bool isUsername= Regex.IsMatch(entryUsername.Text, @"\A(?:[a-z0 - 9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+                if(! isUsername)
                 {
-                    await this.DisplayAlert("WARNING", "Email format is wrong", "OK");
+                    await this.DisplayAlert("WARNING", "Wrong username", "OK");
                     return false;
                 }
                 if (String.IsNullOrWhiteSpace(entryPassword.Text))
