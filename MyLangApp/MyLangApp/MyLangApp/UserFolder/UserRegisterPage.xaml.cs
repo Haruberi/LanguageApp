@@ -12,7 +12,6 @@ namespace MyLangApp.UserFolder
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserRegisterPage : ContentPage
     {
-        private object entryUsername;
 
         public UserRegisterPage()
         {
@@ -26,7 +25,7 @@ namespace MyLangApp.UserFolder
 
         private void btnCancel_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new UserLoginPage());
         }
     }
 }

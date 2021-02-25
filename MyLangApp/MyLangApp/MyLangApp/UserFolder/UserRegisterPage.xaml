@@ -28,7 +28,14 @@
                         Margin="15"
                         HorizontalOptions="Center"
                         Clicked="btnRegister_Clicked"/>
-
+                <!--Går tillbaka till UserloginPage-->
+                <Button x:Name="btnCancel"
+                    FontSize="Large"
+                    Text="CANCEL"
+                    TextColor="White"
+                    BackgroundColor="Salmon"
+                    Clicked="btnCancel_Clicked"
+                    ></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -17,12 +17,14 @@
                    FontSize="Default"
                    FontAttributes="Bold"/>
             <Entry x:Name="entryUsername"
+                   ReturnType="Next"
                    Placeholder="Type here..."></Entry>
 
             <Label Text="Password"
                    FontSize="Default"
                    FontAttributes="Bold"/>
             <Entry x:Name="entryPassword"
+                   ReturnType="Done"
                    Placeholder="Type here..."
                    IsPassword="True"></Entry>
 
@@ -35,7 +37,8 @@
                     HorizontalOptions="Center"
                     Clicked="btnLogin_Clicked"
                     ></Button>
-            
+            <Label x:Name="forgetLabel" Text="Forgot your password?" TextColor="Blue" FontSize="15" BackgroundColor="Transparent"/>
+
             <!--btnCancel gör att man går tillbaka till UserLoginPage-->
             <Button x:Name="btnCancel"
                     FontSize="Large"
