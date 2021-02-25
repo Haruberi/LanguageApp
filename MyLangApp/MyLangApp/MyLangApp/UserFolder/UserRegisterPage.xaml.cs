@@ -23,5 +23,10 @@ namespace MyLangApp.UserFolder
         {
             Navigation.PushAsync(new LoginPage());
         }
+
+        private void btnCancel_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
