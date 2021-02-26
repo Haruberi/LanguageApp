@@ -1,6 +1,4 @@
-﻿using MyLangApp.Data;
-using MyLangApp.Models;
-using MyLangApp.Tables;
+﻿using MyLangApp.Tables;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -14,10 +12,9 @@ using Xamarin.Forms.Xaml;
 
 namespace MyLangApp.UserFolder
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserRegisterPage : ContentPage
     {
-        UserDB userData = new UserDB();
 
         public UserRegisterPage()
         {

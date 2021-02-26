@@ -1,5 +1,4 @@
-﻿using MyLangApp.Data;
-using MyLangApp.Main;
+﻿using MyLangApp.Main;
 using MyLangApp.Tables;
 using SQLite;
 using System;
