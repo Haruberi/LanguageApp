@@ -1,4 +1,5 @@
 ﻿using MyLangApp.Languages;
+using MyLangApp.UserFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,11 @@ namespace MyLangApp.Main
         {
             Navigation.PushAsync(new KoreanCourses());
 
+        }
+
+        private async void ToolbarItemLogout_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserLoginPage());
         }
     }
     }
