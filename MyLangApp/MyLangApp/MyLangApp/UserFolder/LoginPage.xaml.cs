@@ -35,30 +35,22 @@ namespace MyLangApp.UserFolder
             {
                 IEnumerable<User> result = userData.whereUser(entryUsername.Text.Trim(), entryPassword.Text.Trim());
 
-                //Skriver inn fel
-                if (result.Count() ==0)
+                if (result.Count() == 0)
                 {
-                    await DisplayAlert("Alert", "Incorrect Username or Password", "OK");
+                    await DisplayAlert("ATTENTION", "Incorrect Username or Password", "OK");
                 }
-                //Skriver in rätt?
                 else if (result.Count() == 1)
                 {
-                    await (Navigation.PushAsync(new StartPage()));
                 }
                 else if (result.Count() >= 1)
                 {
-                    await DisplayAlert("OOPS!", "You are already an registered member, please try again.", "OK");
+                    await DisplayAlert("ATTENTION", "You are already an registered member, please try again.", "OK");
 
                 }
             }
-            {
-
-            }
-            //Navigation.PushAsync(new StartPage());
         }
-
-        private async Task<bool> ValidateForm()
-        {
+                private async Task<bool> ValidateForm()
+            {
             if (String.IsNullOrWhiteSpace(entryUsername.Text))
             {
                 await this.DisplayAlert("ATTENTION", "You need to enter a valid username", "OK");
@@ -70,20 +62,25 @@ namespace MyLangApp.UserFolder
                 //bool isEmail = Regex.IsMatch(entryUsername.Text, @"\A(?:[a-z0 - 9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
                 //för username:, om error: ^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$
                 bool isUsername = Regex.IsMatch(entryUsername.Text, @"^(?=.{4,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$", RegexOptions.IgnoreCase);
-                if(! isUsername)
+                if (!isUsername)
                 {
                     await this.DisplayAlert("ATTENTION", "Wrong username", "OK");
                     return false;
                 }
-                if (String.IsNullOrWhiteSpace(entryPassword.Text))
+                else if (String.IsNullOrWhiteSpace(entryPassword.Text))
                 {
-                    await this.DisplayAlert("WARNING", "You need to enter a password", "OK");
+                        await this.DisplayAlert("ATTENTION", "You need to enter a password", "OK");
+                        return false;
+                }
+                else
+                {
+                    await (Navigation.PushAsync(new StartPage()));
+                }
                     return false;
                 }
 
-                return true;
             }
-
         }
     }
-}
+
+
