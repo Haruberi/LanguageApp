@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyLangApp.Tables
 {
-    class LoginTable
+    class User
     {
     }
 }
