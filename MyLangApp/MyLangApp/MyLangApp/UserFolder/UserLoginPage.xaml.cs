@@ -14,7 +14,7 @@ namespace MyLangApp.UserFolder
     {
         public UserLoginPage()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         //Navigate to page for Registration (UserRegisterPage)

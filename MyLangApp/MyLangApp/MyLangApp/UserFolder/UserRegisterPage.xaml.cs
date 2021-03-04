@@ -15,15 +15,37 @@ namespace MyLangApp.UserFolder
     //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserRegisterPage : ContentPage
     {
+        //CollectionView collectionView = new CollectionView();
 
         public UserRegisterPage()
         {
             InitializeComponent();
         }
 
-        //Navigate to loginpage
-        private void btnRegister_Clicked(object sender, EventArgs e)
+        protected override async void OnAppearing()
         {
+            base.OnAppearing();
+            collectionView.ItemsSource = await App.Database.GetUserAsync();
+            //collectionView.ItemsSourse = await App.Database.GetUserAsync();
+            
+        }
+
+        //Navigate to loginpage
+        //By clicking Register button, save the data to the database
+        async void btnRegister_Clicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(enterUsername.Text) && !string.IsNullOrWhiteSpace(enterPassword.Text) && !string.IsNullOrWhiteSpace(enterEmail.Text))
+            {
+                await App.Database.SaveUserAsync(new User
+                {
+                    Name = enterUsername.Text,
+                    Password = enterPassword.Text,
+                    Email = enterEmail.Text
+                });
+
+                enterUsername.Text = enterPassword.Text = enterEmail.Text = string.Empty;
+                collectionView.ItemsSource = await App.Database.GetUserAsync();
+            }
             //skapar första databasen
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
             var db = new SQLiteConnection(dbpath);
