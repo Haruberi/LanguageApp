@@ -12,7 +12,7 @@ namespace MyLangApp
 
         public App()
         {
-            //InitializeComponent();
+            InitializeComponent();
             MainPage = new NavigationPage(new UserLoginPage());
 
         }

@@ -26,15 +26,13 @@
                         TextColor="White"
                         BackgroundColor="Salmon"
                         Margin="15"
-                        HorizontalOptions="Center"
-                        Clicked="btnRegister_Clicked"/>
+                        HorizontalOptions="Center"/>
                 <!--Går tillbaka till UserloginPage-->
                 <Button x:Name="btnCancel"
                     FontSize="Large"
                     Text="CANCEL"
                     TextColor="White"
                     BackgroundColor="Salmon"
-                    Clicked="btnCancel_Clicked"
                     ></Button>
                 <CollectionView x:Name="collectionView">
                     <CollectionView.ItemTemplate>

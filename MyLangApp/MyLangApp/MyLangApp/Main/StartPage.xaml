@@ -6,14 +6,10 @@
              >
     <ContentPage.ToolbarItems>
         
-        <ToolbarItem Text="Japanese"
-                     Clicked="ToolbarItemJapanese_Clicked"/>
-        <ToolbarItem Text="Chinese"
-                     Clicked="ToolbarItemChinese_Clicked"/>
-        <ToolbarItem Text="Korean"
-                     Clicked="ToolbarItemKorean_Clicked"/>
-        <ToolbarItem Text="Logout"
-                     Clicked="ToolbarItemLogout_Clicked"/>
+        <ToolbarItem Text="Japanese"/>
+        <ToolbarItem Text="Chinese"/>
+        <ToolbarItem Text="Korean"/>
+        <ToolbarItem Text="Logout"/>
     </ContentPage.ToolbarItems>
     <StackLayout Margin="20, 20, 20, 0">
         <Entry Text="Hi!"
@@ -32,8 +28,7 @@
                 BackgroundColor="Salmon"
                 x:Name="japanese"
                 Margin="15"
-                HorizontalOptions="Center"
-                Clicked="japanese_Clicked"/>
+                HorizontalOptions="Center"/>
         
         <Button Text="CHINESE"
                 FontSize="Title"
@@ -41,8 +36,7 @@
                 BackgroundColor="Salmon"
                 x:Name="chinese"
                 Margin="15"
-                HorizontalOptions="Center"
-                Clicked="chinese_Clicked"/>
+                HorizontalOptions="Center"/>
         
         <Button Text="KOREAN"
                 FontSize="Title"
@@ -50,7 +44,6 @@
                 BackgroundColor="Salmon"
                 x:Name="korean"
                 Margin="15"
-                HorizontalOptions="Center"
-                Clicked="korean_Clicked"/>
+                HorizontalOptions="Center"/>
     </StackLayout>
 </ContentPage>

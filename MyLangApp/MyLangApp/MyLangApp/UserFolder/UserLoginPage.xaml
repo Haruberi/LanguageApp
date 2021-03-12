@@ -18,16 +18,13 @@
                     TextColor="White"
                     FontSize="Large"
                     BackgroundColor="Salmon"
-                    Text="LOGIN"
-                    Clicked="btnLogin_Clicked">
-            </Button>
-            
+                    Text="LOGIN"/>
+
             <Button x:Name="btnRegister"
                     TextColor="White"
                     FontSize="Large"
                     BackgroundColor="Salmon"
-                    Text="REGISTER"
-                    Clicked="btnRegister_Clicked"></Button>
+                    Text="REGISTER"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

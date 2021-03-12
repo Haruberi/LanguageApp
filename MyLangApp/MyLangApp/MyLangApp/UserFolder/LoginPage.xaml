@@ -35,7 +35,6 @@
                     BackgroundColor="Salmon"
                     Margin="20"
                     HorizontalOptions="Center"
-                    Clicked="btnLogin_Clicked"
                     ></Button>
 
             <!--btnCancel gör att man går tillbaka till UserLoginPage-->
@@ -44,7 +43,6 @@
                     Text="CANCEL"
                     TextColor="White"
                     BackgroundColor="Salmon"
-                    Clicked="btnCancel_Clicked"
                     ></Button>
         </StackLayout>
     </ContentPage.Content>
